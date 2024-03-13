@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Boilerplate NextJs (TypeScript)
+
+This is a basic boilerplate setup for a Next.js project using pnpm as the package manager.
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Make sure you have Node.js installed on your machine.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Installing pnpm
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+If you don't have pnpm installed, you can install it using the following command:
+`npm install -g pnpm`
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Boilerplate Installation
 
-## Learn More
+1. Open boilerplate package or clone (git clone)
+2. Navigate to the project directory
+3. Install dependencies using pnpm
+   `pnpm install`
+4. To run the development server
+   `pnpm dev`
+5. Install Pnpm
+6. Setup NextJs
 
-To learn more about Next.js, take a look at the following resources:
+## NextJs Setup
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Initial setup
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+This initial setup provides a TypeScript-enabled Next.js project with ESLint, Tailwind CSS, organized within a src/ directory, utilizing App Router, and without default import aliases.
 
-## Deploy on Vercel
+- TypeScript? Yes
+- ESLint? Yes
+- Tailwind CSS? Yes
+- src/ directory? Yes
+- Use App Router? Yes
+- Default import alias (@/\*)? No
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Folder Structure
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- src/
+- app/
+- page.tsx
+- layout.tsx
+- favicon.ico
+- api/
+- components
+- styles
+- globals.css
+- utils
+- lib
+- types
+- public
+- middleware.js
+
+**Explanation:**
+
+- `src/`: The root directory for the source code of your Next.js application.
+- `app/`: This directory encapsulates application-specific files and components.
+- `api/`: A directory for handling API routes. Next.js automatically turns files in this directory into API routes, allowing you to define server-side logic.
+- `components/`: Contains React components that can be reused across multiple pages or sections of your application.
+- `styles/`: Holds stylesheets for your application.
+- `globals.css`: A global stylesheet that provides styles applied throughout your application. This can include global resets or styles that are not specific to any component.
+- `utils/`: A directory for utility functions or modules that can be shared across your application.
+- `lib/`: Commonly used for housing libraries, modules, or functions that are not specific to any particular feature but are shared across the application.
+- `types/`: TypeScript type definitions reside here, providing a central location for defining custom types and interfaces used throughout your project.
+- `public/`: The directory for static assets like images, files, or other resources that should be served as-is. Contents of this directory are accessible from the root of your application.
+- `middleware.js`: This file appears to be a middleware script, likely handling server-side logic or middleware functionality. Ensure it's appropriately integrated into your Next.js application, depending on your specific requirements.
+
+By following this organized structure, you establish a clear separation of concerns and facilitate maintainability as your Next.js TypeScript project evolves.
