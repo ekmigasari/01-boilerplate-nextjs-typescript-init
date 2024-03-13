@@ -38,21 +38,22 @@ This initial setup provides a TypeScript-enabled Next.js project with ESLint, Ta
 - Default import alias (@/\*)? No
 
 ### Folder Structure
-
-- src/
-- app/
-- page.tsx
-- layout.tsx
-- favicon.ico
-- api/
-- components
-- styles
-- globals.css
-- utils
-- lib
-- types
-- public
-- middleware.js
+```
+src/
+|-- app/
+| |-- page.tsx
+| |-- layout.tsx
+| |-- favicon.ico
+| |-- api/
+|-- components
+|-- styles
+| |-- globals.css
+|--utils
+|--lib
+|--types
+public
+middleware.js
+```
 
 **Explanation:**
 
